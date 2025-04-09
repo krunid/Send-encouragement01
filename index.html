@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: url('https://images.dmc.tv/wallpaper/raw/14180.jpg') center/cover no-repeat;
+            background: url('https://travel.mthai.com/app/uploads/2014/07/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B9%8C%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B9%86-14.jpg') center/cover no-repeat;
         }
         .navbar {
             width: 100%;
@@ -258,7 +258,7 @@
                 <button onclick="flipCard()">กรุณากดปุ่ม</button>
             </div>
             <div class="back">
-                <h3>ลงนามถวายพระพร</h3>
+                <h3>เลือกรูปแบบ</h3>
                 <select id="messageType" onchange="updateBlessingOptions()">
                     <option value="royal">ลงนามถวายพระพร</option>
                     <option value="festival">อวยพรตามเทศกาล</option>
@@ -278,7 +278,7 @@
         </div>
     </div>
     <footer>
-        <p>© 2025 ส่งกำลังใจ | พัฒนาโดย ครูนิด ศิษย์หลวงพ่อเสือ เขียนโปแกรมโดย xAI</p>
+        <p>© 2025 ส่งกำลังใจ | พัฒนาโดย นายxxx  ครูนิด ศิษย์หลวงพ่อเสือ เขียนโปแกรมโดย xAI</p>
     </footer>
 
     <!-- Progress Bar HTML -->
@@ -321,6 +321,7 @@
                 { value: "1", text: "สวัสดีปีใหม่ ขอให้มีความสุขตลอดปี" },
                 { value: "2", text: "สุขสันต์วันสงกรานต์ ขอให้สดชื่นรื่นเริง" },
                 { value: "3", text: "สุขสันต์วันคริสต์มาส ขอให้พบแต่สิ่งดีๆ" },
+                { value: "4", text: "สุขสันต์วันลอยกระทง ขอให้พบแต่สิ่งดีๆ" },
                 { value: "custom", text: "พิมพ์เอง" }
             ],
             encouragement: [
@@ -365,7 +366,7 @@
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit',
-                hour12: false
+                hour12: true
             };
             const dateTimeString = now.toLocaleString('th-TH', options)
                 .replace(' ', ' ')
